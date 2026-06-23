@@ -1,0 +1,564 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Khotso Selialia — Ph.D. candidate in Computer Science at the University of Massachusetts Amherst. Research in natural language processing, multilingual machine translation, efficient deep learning, and federated learning.">
+  <meta name="author" content="Khotso Selialia">
+  <meta property="og:title" content="Khotso Selialia">
+  <meta property="og:description" content="Ph.D. Candidate in Computer Science at UMass Amherst">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://khotso1186.github.io/">
+  <meta property="og:image" content="https://khotso1186.github.io/images/profile.png">
+  <title>Khotso Selialia — Ph.D. Candidate, UMass Amherst</title>
+
+  <style>
+    :root {
+      --ink: #19202a;
+      --muted: #5f6875;
+      --line: #dfe4ea;
+      --soft: #f6f8fa;
+      --accent: #2463a6;
+      --accent-dark: #174775;
+      --paper: #ffffff;
+      --max: 960px;
+    }
+
+    * { box-sizing: border-box; }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 86px;
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--paper);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: var(--accent-dark);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(255, 255, 255, 0.95);
+      border-bottom: 1px solid var(--line);
+      backdrop-filter: blur(10px);
+    }
+
+    .nav-wrap {
+      width: min(calc(100% - 36px), var(--max));
+      min-height: 64px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .brand {
+      color: var(--ink);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      white-space: nowrap;
+    }
+
+    .brand:hover {
+      color: var(--ink);
+      text-decoration: none;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      font-size: 0.95rem;
+    }
+
+    .nav-links a {
+      color: #303844;
+      font-weight: 500;
+    }
+
+    main {
+      width: min(calc(100% - 36px), var(--max));
+      margin: 0 auto;
+    }
+
+    section {
+      padding: 54px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    section:last-child {
+      border-bottom: 0;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: 1fr 224px;
+      gap: 56px;
+      align-items: start;
+      padding-top: 68px;
+    }
+
+    .eyebrow {
+      margin: 0 0 8px;
+      color: var(--muted);
+      font-size: 1.04rem;
+      font-weight: 500;
+    }
+
+    h1 {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(2.7rem, 6vw, 4.3rem);
+      line-height: 1.05;
+      letter-spacing: -0.045em;
+      font-weight: 700;
+    }
+
+    .subtitle {
+      margin: 14px 0 22px;
+      color: #4a5360;
+      font-size: 1.08rem;
+    }
+
+    .status {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin: 0 0 24px;
+      padding: 8px 12px;
+      border: 1px solid #bdd1e7;
+      border-radius: 999px;
+      background: #f2f7fc;
+      color: var(--accent-dark);
+      font-size: 0.91rem;
+      font-weight: 600;
+    }
+
+    .status::before {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #31835b;
+      content: "";
+    }
+
+    .lead {
+      margin-top: 0;
+      font-size: 1.05rem;
+    }
+
+    .profile-photo {
+      width: 224px;
+      aspect-ratio: 1 / 1.13;
+      object-fit: cover;
+      object-position: center top;
+      border-radius: 5px;
+      box-shadow: 0 12px 36px rgba(20, 31, 44, 0.14);
+    }
+
+    .social-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 9px;
+      margin-top: 24px;
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      min-height: 34px;
+      padding: 5px 11px;
+      border: 1px solid #cbd3dc;
+      border-radius: 6px;
+      color: #29323e;
+      background: #fff;
+      font-size: 0.88rem;
+      font-weight: 600;
+    }
+
+    .pill:hover {
+      border-color: #9eb5cd;
+      background: #f7f9fb;
+      text-decoration: none;
+    }
+
+    h2 {
+      margin: 0 0 24px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 2rem;
+      line-height: 1.2;
+      letter-spacing: -0.025em;
+    }
+
+    h3 {
+      margin: 0;
+      font-size: 1.05rem;
+      line-height: 1.42;
+    }
+
+    .news-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .news-list li {
+      display: grid;
+      grid-template-columns: 92px 1fr;
+      gap: 18px;
+      padding: 11px 0;
+      border-bottom: 1px dashed #e2e6eb;
+    }
+
+    .news-list li:last-child {
+      border-bottom: 0;
+    }
+
+    .news-date {
+      color: var(--muted);
+      font-size: 0.91rem;
+      font-weight: 600;
+    }
+
+    .section-note {
+      margin: -13px 0 28px;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    .publication {
+      display: grid;
+      grid-template-columns: 118px 1fr;
+      gap: 24px;
+      padding: 24px 0;
+      border-top: 1px solid var(--line);
+    }
+
+    .publication:first-of-type {
+      border-top: 0;
+      padding-top: 0;
+    }
+
+    .pub-thumb {
+      width: 118px;
+      height: 88px;
+      object-fit: cover;
+      border: 1px solid #d8dee5;
+      border-radius: 5px;
+      background: var(--soft);
+    }
+
+    .placeholder-thumb {
+      display: grid;
+      place-items: center;
+      width: 118px;
+      height: 88px;
+      padding: 10px;
+      border: 1px solid #d8dee5;
+      border-radius: 5px;
+      color: #5b6674;
+      background:
+        linear-gradient(135deg, rgba(36, 99, 166, 0.09), rgba(36, 99, 166, 0.02)),
+        var(--soft);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 0.78rem;
+      font-weight: 700;
+      line-height: 1.25;
+      text-align: center;
+    }
+
+    .pub-title {
+      color: var(--ink);
+      font-weight: 700;
+    }
+
+    .pub-title:hover {
+      color: var(--accent-dark);
+    }
+
+    .authors,
+    .venue {
+      margin: 5px 0 0;
+      color: #47515e;
+      font-size: 0.94rem;
+    }
+
+    .venue {
+      color: var(--muted);
+      font-style: italic;
+    }
+
+    .pub-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 11px;
+    }
+
+    .pub-links a {
+      padding: 2px 8px;
+      border: 1px solid #cfd6de;
+      border-radius: 4px;
+      color: #344150;
+      font-size: 0.81rem;
+      font-weight: 600;
+    }
+
+    .pub-links a:hover {
+      background: var(--soft);
+      text-decoration: none;
+    }
+
+    .cv-box {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      padding: 24px;
+      border: 1px solid var(--line);
+      border-radius: 7px;
+      background: var(--soft);
+    }
+
+    .cv-box p {
+      margin: 5px 0 0;
+      color: var(--muted);
+    }
+
+    .primary-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 150px;
+      min-height: 42px;
+      padding: 9px 16px;
+      border-radius: 5px;
+      color: white;
+      background: var(--accent);
+      font-weight: 700;
+      white-space: nowrap;
+    }
+
+    .primary-button:hover {
+      color: white;
+      background: var(--accent-dark);
+      text-decoration: none;
+    }
+
+    footer {
+      width: min(calc(100% - 36px), var(--max));
+      margin: 0 auto;
+      padding: 30px 0 40px;
+      color: var(--muted);
+      font-size: 0.86rem;
+      text-align: center;
+    }
+
+    @media (max-width: 720px) {
+      .nav-wrap {
+        min-height: 58px;
+      }
+
+      .nav-links {
+        gap: 14px;
+        font-size: 0.87rem;
+      }
+
+      .hero {
+        grid-template-columns: 1fr;
+        gap: 28px;
+        padding-top: 44px;
+      }
+
+      .profile-photo {
+        grid-row: 1;
+        width: 164px;
+      }
+
+      .news-list li {
+        grid-template-columns: 1fr;
+        gap: 2px;
+      }
+
+      .publication {
+        grid-template-columns: 1fr;
+      }
+
+      .cv-box {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+    }
+
+    @media (max-width: 500px) {
+      .brand {
+        font-size: 0.94rem;
+      }
+
+      .nav-links a:nth-child(2) {
+        display: none;
+      }
+
+      section {
+        padding: 42px 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="site-header">
+    <nav class="nav-wrap" aria-label="Primary navigation">
+      <a class="brand" href="#about">Khotso Selialia</a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#news">News</a>
+        <a href="#publications">Publications</a>
+        <a href="#cv">CV</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="about">
+      <div>
+        <p class="eyebrow">Hello, I am</p>
+        <h1>Khotso Selialia</h1>
+        <p class="subtitle">Ph.D. Candidate, Computer Science · University of Massachusetts Amherst</p>
+
+        <div class="status">Open to research and applied-science opportunities</div>
+
+        <p class="lead">
+          I am a Ph.D. candidate in Computer Science at the
+          <a href="https://www.umass.edu/" target="_blank" rel="noopener">University of Massachusetts Amherst</a>.
+          My research focuses on natural language processing, multilingual machine translation,
+          efficient deep learning, and federated learning.
+        </p>
+
+        <p>
+          I develop methods that make multilingual models more accurate, memory-efficient, and
+          accessible across languages. My recent work studies tokenization fragmentation,
+          adaptive positional representations, dynamic batching, decoder layer dropping, and
+          stable optimization for privacy-preserving federated learning.
+        </p>
+
+        <div class="social-links" aria-label="Profile links">
+          <a class="pill" href="mailto:kselialia@umass.edu">Email</a>
+          <a class="pill" href="https://github.com/khotso1186" target="_blank" rel="noopener">GitHub</a>
+          <a class="pill" href="https://www.linkedin.com/in/khotso-selialia-4baab913a/" target="_blank" rel="noopener">LinkedIn</a>
+          <!-- Add your Scholar URL below when available. -->
+          <!-- <a class="pill" href="YOUR_GOOGLE_SCHOLAR_URL" target="_blank" rel="noopener">Google Scholar</a> -->
+        </div>
+      </div>
+
+      <img
+        class="profile-photo"
+        src="images/profile.png"
+        alt="Portrait of Khotso Selialia"
+        width="224"
+        height="253">
+    </section>
+
+    <section id="news">
+      <h2>News</h2>
+      <ul class="news-list">
+        <li>
+          <span class="news-date">2026</span>
+          <span>Our work on adaptive positional representations for multilingual machine translation was accepted to ACL.</span>
+        </li>
+        <li>
+          <span class="news-date">2026</span>
+          <span>Developing fragmentation-aware decoder layer dropping for memory-efficient multilingual translation.</span>
+        </li>
+        <li>
+          <span class="news-date">2026</span>
+          <span>Working on adaptive and stable optimization methods for privacy-preserving federated learning.</span>
+        </li>
+      </ul>
+    </section>
+
+    <section id="publications">
+      <h2>Publications &amp; Research</h2>
+      <p class="section-note">Selected work. Replace commented placeholder links with official paper and code URLs when available.</p>
+
+      <article class="publication">
+        <div class="placeholder-thumb" aria-hidden="true">Adaptive Positional Encoding</div>
+        <div>
+          <h3>
+            <span class="pub-title">DCARPE: Tokenization-Aware Adaptive Positional Encoding for Multilingual Machine Translation</span>
+          </h3>
+          <p class="authors"><strong>Khotso Selialia</strong> and collaborators</p>
+          <p class="venue">Annual Meeting of the Association for Computational Linguistics (ACL), 2026</p>
+          <div class="pub-links">
+            <!-- <a href="PAPER_URL">Paper</a> -->
+            <!-- <a href="CODE_URL">Code</a> -->
+            <a href="https://github.com/khotso1186" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="publication">
+        <div class="placeholder-thumb" aria-hidden="true">Efficient Multilingual Translation</div>
+        <div>
+          <h3>
+            <span class="pub-title">Fragmentation-Aware Decoder Layer Dropping for Memory-Efficient Multilingual Translation</span>
+          </h3>
+          <p class="authors"><strong>Khotso Selialia</strong> and collaborators</p>
+          <p class="venue">Research in progress</p>
+          <div class="pub-links">
+            <a href="https://github.com/khotso1186" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="publication">
+        <div class="placeholder-thumb" aria-hidden="true">Private Federated Learning</div>
+        <div>
+          <h3>
+            <span class="pub-title">ADAPT-FED: Adaptive Stability Control for Privacy-Preserving Federated Learning</span>
+          </h3>
+          <p class="authors"><strong>Khotso Selialia</strong> and collaborators</p>
+          <p class="venue">Research manuscript</p>
+          <div class="pub-links">
+            <a href="https://github.com/khotso1186" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section id="cv">
+      <h2>Curriculum Vitae</h2>
+      <div class="cv-box">
+        <div>
+          <h3>Academic background, research, publications, and experience</h3>
+          <p>Upload your CV to <code>files/Khotso_Selialia_CV.pdf</code> to activate this button.</p>
+        </div>
+        <a class="primary-button" href="files/Khotso_Selialia_CV.pdf">Download CV</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © 2026 Khotso Selialia · Hosted on GitHub Pages
+  </footer>
+</body>
+</html>
