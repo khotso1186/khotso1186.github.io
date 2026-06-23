@@ -12,7 +12,7 @@ site_theme               : "default" # The available themes options are "default
 title                    : "Khotso Selialia"
 title_separator          : "-"
 name                     : &name "Khotso Selialia"
-description              : &description "Ph.D. Candidate in Computer Science at the University of Massachusetts Amherst | Natural Language Processing | Multilingual Machine Translation | Efficient Machine Learning"
+description              : &description "Ph.D. Candidate in Electrical and Computer Engineering at the University of Massachusetts Amherst | Natural Language Processing | Multilingual Machine Translation | Efficient Machine Learning"
 url                      : "https://khotso1186.github.io"
                                                            # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : ""
@@ -26,7 +26,7 @@ author:
   avatar           : "profile.png"
   name             : "Khotso Selialia"
   pronouns         :
-  bio              : "Ph.D. candidate in Computer Science at the University of Massachusetts Amherst. My research focuses on natural language processing, multilingual machine translation, efficient deep learning, and federated learning."
+  bio              : "Ph.D. candidate in Electrical and Computer Engineering at the University of Massachusetts Amherst. My research focuses on natural language processing, multilingual machine translation, efficient deep learning, and federated learning."
   location         : "Amherst, Massachusetts, USA"
   employer         : "University of Massachusetts Amherst"
   uri              :
